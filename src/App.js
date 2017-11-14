@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CartHeader from  './CartHeader';
-import CartFooter from  './CartFooter';
-import CartItems from  './CartItems';
+import ShoppingCart from  './ShoppingCart';
+
 class App extends Component {
   render() {
+    var newYear = new Date().getFullYear();
     return (
       <div className="App">
-        <CartHeader />
-        <CartItems />
-        <CartFooter />
+        <ShoppingCart copyRight = {newYear} />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartFooter = () =>{
+const CartFooter = ({copyRight}) =>{
   return (
     <footer className="page-footer">
           <div className="container">
@@ -12,7 +12,7 @@ const CartFooter = () =>{
           </div>
           <div className="footer-copyright">
             <div className="container">
-              &copy; Never
+              &copy; {copyRight}
             </div>
           </div>
     </footer>
