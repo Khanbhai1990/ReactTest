@@ -3,14 +3,17 @@ import CartHeader from  './CartHeader';
 import CartFooter from  './CartFooter';
 import CartItems from  './CartItems';
 
-const ShoppingCart = ({copyRight}) =>{
+class ShoppingCart extends React.Component{
+  render(){
   return (
     <div className="ShoppingCart">
       <CartHeader />
-      <CartItems />
-      <CartFooter copyRight= {copyRight} />
+      <CartItems items = {this.props.items} />
+      <CartFooter copyRight= {this.props.copyRight} />
     </div>
-  )
+
+    )
+  }  
 }
 
 export default ShoppingCart
